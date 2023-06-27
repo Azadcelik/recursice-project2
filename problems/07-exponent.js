@@ -1,5 +1,5 @@
 /***********************************************************************
-Write a recursive function called `exponent` that takes two integers, 
+Write a recursive function called `exponent` that takes two integers,
 `num` and `power`, and returns `num` raised to the `power`th power. Your
 function should work when `num` or `power` are positive OR negative.
 
@@ -25,11 +25,11 @@ function exponent(num, power) {
         return 1
     }
     if (power > 0) {
-       return num * exponent(num, power -1) 
+       return num * exponent(num, power -1)
     }
-    
+
     else {
-        return  exponent(num, - power)
+        return 1/ exponent(num, - power)
     }
 }
 console.log(exponent(3, 2)); // 9
