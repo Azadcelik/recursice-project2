@@ -17,7 +17,11 @@ function addToTwelve(arr) {
   // Your code here
 }
 
-
+addToTwelve([1, 3, 4, 7, 5]); // true
+addToTwelve([1, 3, 4, 7, 6]); // false
+addToTwelve([1, 11, 4, 7, 6]); // true
+addToTwelve([1, 12, 4, 7, 6]); // false
+addToTwelve([1]); // false
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = addToTwelve;
