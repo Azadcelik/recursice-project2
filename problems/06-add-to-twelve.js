@@ -14,12 +14,25 @@ addToTwelve([1]); // false
 
 
 function addToTwelve(arr) {
-  
-  
-}
+  if (arr.length <= 1) {
+    return false
+  } 
+    let firstNum = arr[0]
+    let secondNum= arr[1] 
+    if (firstNum + secondNum === 12) {
+      return true
+    }
+    else {
+      return addToTwelve(arr.slice(1)) 
+    }
+    // return addToTwelve(firstNum ) + 
+    
+  }
+ 
 
-addToTwelve([1, 3, 4, 7, 5]); // true
-addToTwelve([1, 3, 4, 7, 6]); // false
+
+console.log(addToTwelve([1, 3, 4, 7, 5])); // true
+console.log(addToTwelve([1, 3, 4, 7, 6])); // false
 addToTwelve([1, 11, 4, 7, 6]); // true
 addToTwelve([1, 12, 4, 7, 6]); // false
 addToTwelve([1]); // false
